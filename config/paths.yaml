@@ -1,0 +1,6 @@
+raw: data/raw
+interim: data/interim
+processed: data/processed
+models: outputs/models
+tables: outputs/tables
+figures: outputs/figures

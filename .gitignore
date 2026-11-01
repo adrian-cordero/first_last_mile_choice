@@ -1,0 +1,17 @@
+# Data
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# Outputs
+outputs/models/*
+!outputs/**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/

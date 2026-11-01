@@ -1,0 +1,23 @@
+[project]
+name = "dcm"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+biogeme = ["biogeme"]
+xlogit = ["xlogit"]
+pylogit = ["pylogit"]
+all = ["dcm[biogeme,xlogit,pylogit]"]
+dev = ["pytest", "jupyter"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
